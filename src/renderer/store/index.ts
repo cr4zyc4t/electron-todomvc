@@ -17,11 +17,7 @@ declare global {
 const savedTodosStr = localStorage.getItem(STORAGE_KEY);
 let savedTodos: AppState;
 if (savedTodosStr) {
-  try {
-    savedTodos = JSON.parse(savedTodosStr);
-  } catch (error) {
-    // do nothing
-  }
+  savedTodos = JSON.parse(savedTodosStr);
 } else {
   savedTodos = {
     tasks: [],
