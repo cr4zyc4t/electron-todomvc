@@ -1,0 +1,20 @@
+{
+  "extends": "./node_modules/electron-webpack/tsconfig-base.json",
+  "include": [
+    "./src/renderer"
+  ],
+  "compilerOptions": {
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "noEmit": true
+  },
+}
